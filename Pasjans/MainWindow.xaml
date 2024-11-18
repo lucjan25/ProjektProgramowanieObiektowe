@@ -1,0 +1,43 @@
+﻿<Window x:Class="Pasjans.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pasjans"
+        mc:Ignorable="d"
+        Title="Pasjans" Height="608" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <Label Content="1" HorizontalAlignment="Left" Margin="25,74,0,0" VerticalAlignment="Top"/>
+        <Label Content="2" HorizontalAlignment="Left" Margin="125,74,0,0" VerticalAlignment="Top"/>
+        <Label Content="3" HorizontalAlignment="Left" Margin="225,74,0,0" VerticalAlignment="Top"/>
+        <Label Content="4" HorizontalAlignment="Left" Margin="325,74,0,0" VerticalAlignment="Top"/>
+        <Label Content="5" HorizontalAlignment="Left" Margin="425,74,0,0" VerticalAlignment="Top"/>
+        <Label Content="6" HorizontalAlignment="Left" Margin="525,74,0,0" VerticalAlignment="Top"/>
+        <Label Content="7" HorizontalAlignment="Left" Margin="625,74,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblStock" Content="24" HorizontalAlignment="Left" Margin="26,50,0,0" VerticalAlignment="Top" Height="24" Width="40"/>
+        <Label x:Name="lblWaste" Content="0" HorizontalAlignment="Left" Margin="85,50,0,0" VerticalAlignment="Top" Height="24" Width="40"/>
+        <Button x:Name="btnStock" Content="##" HorizontalAlignment="Left" Margin="26,10,0,0" VerticalAlignment="Top" Height="40" Width="40" Background="White" Click="btnStock_Click" IsEnabled="False"/>
+        <Button x:Name="btnWaste" Content="-"  HorizontalAlignment="Left" Margin="83,10,0,0" VerticalAlignment="Top" Height="40" Width="40" Background="White" IsEnabled="False" Click="btnWaste_Click"/>
+        <ListBox x:Name="lbStack1" Margin="25,100,725,100" MouseDoubleClick="lbS1_MouseDoubleClick"/>
+        <ListBox x:Name="lbStack2" Margin="125,100,625,100" MouseDoubleClick="lbS2_MouseDoubleClick"/>
+        <ListBox x:Name="lbStack3" Margin="225,100,525,100" MouseDoubleClick="lbS3_MouseDoubleClick"/>
+        <ListBox x:Name="lbStack4" Margin="325,100,425,100" MouseDoubleClick="lbS4_MouseDoubleClick"/>
+        <ListBox x:Name="lbStack5" Margin="425,100,325,100" MouseDoubleClick="lbS5_MouseDoubleClick"/>
+        <ListBox x:Name="lbStack6" Margin="525,100,225,100" MouseDoubleClick="lbS6_MouseDoubleClick"/>
+        <ListBox x:Name="lbStack7" Margin="625,100,125,100" MouseDoubleClick="lbS7_MouseDoubleClick"/>
+        <Button x:Name="btnStack1" Content="1" HorizontalAlignment="Left" Height="28" Margin="25,497,0,0" VerticalAlignment="Top" Width="50" Click="btnStack1_Click" IsEnabled="False"/>
+        <Button x:Name="btnStack2" Content="2" HorizontalAlignment="Left" Height="28" Margin="125,497,0,0" VerticalAlignment="Top" Width="50" Click="btnStack2_Click" IsEnabled="False"/>
+        <Button x:Name="btnStack3" Content="3" HorizontalAlignment="Left" Height="28" Margin="225,497,0,0" VerticalAlignment="Top" Width="50" Click="btnStack3_Click" IsEnabled="False"/>
+        <Button x:Name="btnStack4" Content="4" HorizontalAlignment="Left" Height="28" Margin="325,497,0,0" VerticalAlignment="Top" Width="50" Click="btnStack4_Click" IsEnabled="False"/>
+        <Button x:Name="btnStack5" Content="5" HorizontalAlignment="Left" Height="28" Margin="425,497,0,0" VerticalAlignment="Top" Width="50" Click="btnStack5_Click" IsEnabled="False"/>
+        <Button x:Name="btnStack6" Content="6" HorizontalAlignment="Left" Height="28" Margin="525,497,0,0" VerticalAlignment="Top" Width="50" Click="btnStack6_Click" IsEnabled="False"/>
+        <Button x:Name="btnStack7" Content="7" HorizontalAlignment="Left" Height="28" Margin="625,497,0,0" VerticalAlignment="Top" Width="50" Click="btnStack7_Click" IsEnabled="False"/>
+        <Button x:Name="btnClubs" Content="♣#" HorizontalAlignment="Left" Margin="230,10,0,0" VerticalAlignment="Top" Height="40" Width="40" Background="White" IsEnabled="False" Click="btnClubs_Click"/>
+        <Button x:Name="btnSpades" Content="♠#" HorizontalAlignment="Left" Margin="330,10,0,0" VerticalAlignment="Top" Height="40" Width="40" Background="White" IsEnabled="False" Click="btnSpades_Click"/>
+        <Button x:Name="btnHearts" Content="♥#" HorizontalAlignment="Left" Margin="425,10,0,0" VerticalAlignment="Top" Height="40" Width="40" Background="White" Foreground="Red" IsEnabled="False" Click="btnHearts_Click"/>
+        <Button x:Name="btnDiamonds" Content="♦#" HorizontalAlignment="Left" Margin="525,10,0,0" VerticalAlignment="Top" Height="40" Width="40" Background="White" Foreground="Red" IsEnabled="False" Click="btnDiamonds_Click"/>
+        <Button x:Name="btnStart" Content="Nowa gra" HorizontalAlignment="Left" Height="44" Margin="669,8,0,0" VerticalAlignment="Top" Width="65" Click="btnStart_Click"/>
+
+
+    </Grid>
+</Window>
